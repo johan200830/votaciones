@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Iniciar Sesión - Plata o Trueque</title>
+  <title>Sesión de votaciones - IE GABO 2025</title>
   <link rel="stylesheet" href="Votaciones.css" />
-
+  <link rel="icon" href="logo colegio.jpg" type="image/png">
 </head>
 <body>
 
   <header>
-    <h1>Plata o Trueque</h1>
+    <h1>Votaciones GABO 2025</h1>
+    <img src="logo colegio.jpg" alt="Logo grande GABO" class="logo-colegio" />
   </header>
 
   <main>
     <div class="login-container">
-      <h2>Iniciar Sesión</h2>
+      <h2>Inicia sesión para votar
+      </h2>
       <form onsubmit="iniciarSesion(event)">
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" required />
+        <label for="codigo">Usuario:</label>
+        <input type="code" id="codigo" required />
 
         <label for="contraseña">Contraseña:</label>
         <input type="password" id="contraseña" required />
@@ -31,13 +33,15 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Plata o Trueque. Todos los derechos reservados.</p>
+    <div>Descripción</div>
+    <div>© Todos los derechos reservados IEGABO 2025</div>
+    <div>Redes sociales</div>
   </footer>
 
   <script>
     function iniciarSesion(e) {
       e.preventDefault();
-      const correo = document.getElementById('correo').value;
+      const codigo = document.getElementById('codigo').value;
       const contraseña = document.getElementById('contraseña').value;
 
       if (correo && contraseña) {
