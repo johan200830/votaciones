@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página de votaciones - IE GABO 2025</title>
+  <title>Vota aquí - IE GABO 2025</title>
+  <link rel="icon" href="logo colegio.jpg" type="image/png">
 </head>
 <body>
 <header>
@@ -16,7 +17,7 @@
   <nav>
     <ul>
       <li><a href="Votaciones.html">Votación</a></li>
-      <li><a href="Cuenta.html">Cuenta</a></li>
+      <li><a href="http://iegabo-alumnos.ddns.net:90/">Seve</a></li>
       <li><a href="https://www.sena.edu.co">Sena</a></li>
     </ul>
   </nav>
@@ -26,11 +27,11 @@
 
     <section class="sobre-desarrollador">
       <div class="sobre-nosotros">
-        <h2>Sobre Nosotros</h2>
+        <h2>Directivos Docentes</h2>
         <div class="cards">
           <div>
             <img src="don german.jpeg" alt="Germán Castaño" />
-            <p><strong>Germán Castaño</strong><br>Rector</p>
+            <p><strong>Álvaro Posse</strong><br>Rector</p>
           </div>
           <div>
             <img src="one.jpeg" alt="Oneida Pérez" />
@@ -43,9 +44,24 @@
         </div>
       </div>
       <div class="desarrollador">
-        <h2>Desarrollador</h2>
-        <img src="niche.jpeg" alt="Jhon Eddier Olea" id="img-desarrollador" />
-        <p><strong>Jhon Eddier Olea</strong><br>Creador y desarrollador de la página</p>
+        <h2>Desarrolladores</h2>
+        <div class="cards">
+        <div>
+          <img src="johan.jpeg" alt="Johan" class="Creadores" />
+          <p><strong>Johan Sánchez</strong><br>Creador de la página</p>
+        </div>
+        <div>
+          <img src="jhon.jpg" alt="Jhon Eddier Olea" class="Creadores"/>
+          <p><strong>Jhon Eddier Olea</strong><br>Creador y desarrollador de la página</p>
+        </div>
+        <div>
+          <img src="evelyn.jpeg" alt="Evelyn" class="Creadores"/>
+          <p><strong>Evelyn Herrera</strong><br>Creadora de la página</p>
+        </div>
+      </div>
+    </div>
+
+      </div>
       </div>
 
     </section>
@@ -78,21 +94,35 @@
       </div>
       <div>
         <h2>📹 Video</h2>
-        <video controls width="300">
-          <source src="https://youtu.be/ifGUTZcHHk0?si=F-lt0oZsMlao907I" type="video/mp4">
+        <video controls width="500">
+          <source src="Rehen.mp4" type="video/mp4">
         </video>
       </div>
     </section>
 
     <section class="faq">
-      <h2>Preguntas frecuentes</h2>
-      <p>Aquí van las preguntas y respuestas comunes.</p>
-    </section>
+  <h2>Preguntas frecuentes</h2>
+  <p>Aquí van las preguntas y respuestas comunes.</p>
+
+  <form class="faq-form">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+
+    <label for="grado">Grado:</label>
+    <input type="text" id="grado" name="grado" required placeholder="Ej: 11°4">
+
+    <label for="comentario">Comentario:</label>
+    <textarea id="comentario" name="comentario" rows="4" required placeholder="Escribe tu pregunta o comentario aquí..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
   </main>
 
   <footer>
     <div>Descripción</div>
-    <div>© Todos los derechos reservados IEGABO 2023</div>
+    <div>© Todos los derechos reservados IEGABO 2025</div>
     <div>Redes sociales</div>
   </footer>
 </body>
