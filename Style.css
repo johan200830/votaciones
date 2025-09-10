@@ -127,6 +127,7 @@
       justify-content: center;
       gap: 35px;
       margin-top: 15px;
+      flex-wrap: nowrap;
       width: 100%;
     }
 
@@ -364,13 +365,10 @@
 
 .sobre-desarrollador {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: flex-start;
   padding: 40px;
 }
-
 
 .sobre-nosotros, .desarrollador {
   text-align: center;
@@ -427,6 +425,14 @@ footer {
   font-size: 0.9em;
 }
 
+#img-desarrollador {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
 img[alt="Germán Castaño"] {
   width: 300px;
   height: 200px;
@@ -452,65 +458,3 @@ img[alt="Marta"] {
   object-fit: cover;
   margin-bottom: 12px;
 }
-
-.faq-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 400px;
-  margin: 20px auto 0 auto;
-  text-align: left;
-}
-
-.faq-form label {
-  font-weight: bold;
-  color: #333;
-}
-
-.faq-form input,
-.faq-form textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  font-family: inherit;
-}
-
-.faq-form button {
-  background-color: #0079ca;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.faq-form button:hover {
-  background-color: #005f99;
-}
-
-.desarrollador .cards {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 20px;
-}
-
-.desarrollador .cards div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 220px;
-  text-align: center;
-}
-
-.desarrollador img {
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 12px;
-}
-
